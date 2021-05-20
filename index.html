@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>República Dental</title>
+</head>
+
+<body>
+    <div id="menu-mobile">
+        <ul>
+            <li><a onclick="moverseADMenu('inicio')">Inicio</a></li>
+            <li><a onclick="moverseADMenu('servicios')">Servicios</a></li>
+            <li><a onclick="moverseADMenu('equipo')">Nuestro Equipo</a></li>
+            <li><a onclick="moverseADMenu('nosotros')">Sobre Nosotros</a></li>
+            <li><a onclick="moverseADMenu('ubicacion')">Ubicación</a></li>
+            <li><a onclick="irAcontacto()">Contacto</a></li>
+            <li class="cerrar"><a onclick="moverseADMenu('cerrar')">Cerrar</a></li>
+        </ul>
+    </div>
+    <div id="banner">
+        <span class="horario">
+            <img class="icon-b" src="./assets/icons/icons8-clock-24.png" alt="clock">
+            <p>Lunes - Viernes 8:00 a.m. a 8:00 p.m.</p>
+        </span>
+        <span class="facebook link-banner">
+            <a href="https://www.facebook.com/pages/category/Cosmetic-Dentist/Republica-Dental-354284801996896/"
+                class="link-banner">
+                <img class="icon-b" src="./assets/icons/icons8-facebook-50.png" alt="facebook">
+                <p>República Dental</p>
+            </a>
+        </span>
+        <span class="whatsapp">
+            <a class="link-banner" onclick="giveNumber()">
+                <img class="icon-b" src="./assets/icons/icons8-whatsapp-100.png" alt="whatsapp">
+                <p>772 12 39 292</p>
+            </a>
+        </span>
+    </div>
+
+    <div id="menu">
+        <img src="./assets/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Nuestro Equipo</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="https://www.facebook.com/pages/category/Cosmetic-Dentist/Republica-Dental-354284801996896/">Contacto</a></li>
+            </ul>
+            <a class="menu-burger-ico" onclick="abrirMenu()">
+                <img  src="./assets/icons/icons8-menu-26.png" alt="">
+            </a>
+        </nav>
+    </div>
+
+    <div id="inicio">
+        <div class="slider slide">
+            <div class="front">
+                <a class="btn-prev" onclick="">
+                    <img src="./assets/icons/next-btn.png" alt="">
+                </a>
+                <div class="info">
+                    <h2 class="titulo-info">Lo mejor en odontología moderna</h2>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, ducimus
+                        repudiandae illo dolore consectetur libero dolorum asperiores laudantium iure officiis debitis,
+                        fugit tempore illum. Placeat impedit reprehenderit natus reiciendis nostrum.</p>
+                    <button class="opcion" onclick="moverseA('servicios')">Nuestros servicios</button>
+                </div>
+                <a class="btn-next" onclick="">
+                    <img src="./assets/icons/next-btn.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="welcome">
+            <div class="message">
+                <h3>SEA BIENVENIDO</h3>
+                <h4>¡Haga una cita hoy mismo!</h4>
+                <p>Puede hacer una reservación hoy mismo para acudir a cualquiera de nuestras socursales</p>
+            </div>
+            <div class="calendar-div">
+                <div id="calendar">
+                    <div class="tit">
+                        <p><span id="month">Febrero</span>-<span id="year">2021</span></p>
+                    </div>
+                    <div id="cont-calendar">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="servicios">
+        <div class="title-services-area">
+            <h2>LO QUE OFRECEMOS</h2>
+            <h3>Áreas de prácticas dentales</h3>
+        </div>
+        <div class="card-cont">
+            <div class="card-light">
+                <div class="img-up">
+                    <img src="./assets/banners/m1.png" alt="Odontología general">
+                </div>
+                <div class="info-down">
+                    <h4>Odontología General</h4>
+                    <p>¡El objetivo de la odontología general es eliminar todas las enfermedades de su boca y darle una
+                        sonrisa perfecta!</p>
+                    <button class="btn-card-service" onclick="moverseA('mas-servicios-id')">Leer más</button>
+                </div>
+            </div>
+            <div class="card-light">
+                <div class="img-up">
+                    <img src="./assets/banners/m2.png" alt="Odontología general">
+                </div>
+                <div class="info-down">
+                    <h4>Odontología Pediatrica</h4>
+                    <p>La clinica dental república ofrece toda la gama de servicios de odontología como tratamientos de
+                        caries.</p>
+                    <button class="btn-card-service" onclick="moverseA('mas-servicios-id')">Leer más</button>
+                </div>
+            </div>
+            <div class="card-light">
+                <div class="img-up">
+                    <img src="./assets/banners/m3.png" alt="Odontología general">
+                </div>
+                <div class="info-down">
+                    <h4>Odontología Cosmética</h4>
+                    <p>La odontología cosmética se refiere a los tratamientos dentales más adecuados que se basan en la
+                        condición actual del paciente.</p>
+                    <button class="btn-card-service" onclick="moverseA('mas-servicios-id')">Leer más</button>
+                </div>
+            </div>
+        </div>
+        <div class="servicos-descripcion" id="mas-servicios-id">
+            <div class="title-services-area">
+                <h2>NUESTROS</h2>
+                <h3>Servicios</h3>
+            </div>
+            <div class="card-cont-des">
+                <div class="card-des">
+                    <img src="./assets/ico/ico 1.png" alt="">
+                    <h4>Proteción contra la caries</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum dolorum, numquam dolore tempora
+                        ipsa, in voluptatem quaerat iure assumenda cupiditate reprehenderit excepturi at sequi. Nemo ex
+                        velit error quia voluptate!</p>
+                </div>
+                <div class="card-des">
+                    <img src="./assets/ico/ico 2.png" alt="">
+                    <h4>Proteción contra la caries</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum dolorum, numquam dolore tempora
+                        ipsa, in voluptatem quaerat iure assumenda cupiditate reprehenderit excepturi at sequi. Nemo ex
+                        velit error quia voluptate!</p>
+                </div>
+                <div class="card-des">
+                    <img src="./assets/ico/ico 3.png" alt="">
+                    <h4>Proteción contra la caries</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum dolorum, numquam dolore tempora
+                        ipsa, in voluptatem quaerat iure assumenda cupiditate reprehenderit excepturi at sequi. Nemo ex
+                        velit error quia voluptate!</p>
+                </div>
+            </div>
+            <div class="show-more">
+                <button onclick="showMoreServices()">Más servicios ></button>
+            </div>
+        </div>
+    </div>
+    <div id="mas-servicios">
+        <div class="up-servicios">
+            <div class="left-mas-servicios">
+                <h2 id="tit-servicios">Consultas</h2>
+                <img src="./assets/banners/foto1.png" alt="">
+            </div>
+            <div class="right-mas-servicios">
+                <div class="card-lista-servicios">
+                    <h3>Lista de servicios</h3>
+                    <ul>
+                        <li><a id="con" onclick="changeService('con')">Consultas</a></li>
+                        <li><a id="trden" onclick="changeService('trden')">Tratamientos dentales</a></li>
+                        <li><a id="trpe" onclick="changeService('trpe')">Tratamientos periododentales</a></li>
+                        <li><a id="trbla" onclick="changeService('trbla')">Tratamientos blanqueadores</a></li>
+                        <li><a id="trpro" onclick="changeService('trpro')">Proteción de caries</a></li>
+                        <li><a id="odo" onclick="changeService('odo')">Odontología de implantes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="down-servicios">
+            <h2 id="tit-servicios-des">Ponemos más de 20 años de nuestra consultoria dental a su servicio</h2>
+            <div id="description-servicios-id" class="description-servicios">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa reprehenderit nulla
+                    recusandae beatae temporibus minima incidunt voluptate doloribus sint harum iste sapiente, quasi
+                    nihil totam. Reiciendis maxime asperiores repellat?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, molestiae? Aliquid, molestiae!
+                    Aperiam cupiditate voluptatibus, totam laborum ad quod excepturi non quos pariatur deleniti unde
+                    placeat odit nam consequuntur praesentium?</p>
+            </div>
+        </div>
+        <div class="show-more">
+            <button onclick="irAcontacto()">Contactenos</button>
+        </div>
+    </div>
+    <div id="equipo">
+        <div class="title-services-area">
+            <h2>EQUIPO DE PROFESIONALES</h2>
+            <h3>Dentistas altamente calificados</h3>
+        </div>
+        <div class="card-cont">
+            <div class="card-light">
+                <div class="img-up">
+                    <img src="./assets/banners/d1.png" alt="Odontología general">
+                </div>
+                <div class="info-down">
+                    <h4>Dr. J. Omar Escamilla Cruz</h4>
+                    <p>Información sobre este miembro del equipo, es un doctor my importante de nuestra empresa</p>
+                </div>
+            </div>
+            <div class="card-light">
+                <div class="img-up">
+                    <img src="./assets/banners/d2.png" alt="Odontología general">
+                </div>
+                <div class="info-down">
+                    <h4>Dr. Nombre del doctor</h4>
+                    <p>Información sobre este miembro del equipo, es un doctor my importante de nuestra empresa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nosotros">
+        <h4>Nuestro sistema de atención médica integrado brinda una atención excepcional</h4>
+        <div class="mision nosotros-part">
+            <div class="left-part">
+                <h5>Misión y Visión</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium corporis voluptate
+                    reprehenderit quasi nostrum adipisci rerum iure! Itaque dolorum, consequuntur assumenda possimus
+                    soluta molestiae esse impedit eum dolores minus libero!</p>
+                <button onclick="irAcontacto()">Contectenos</button>
+            </div>
+            <div class="right-part">
+                <img src="./assets/banners/foto3.png" alt="">
+            </div>
+        </div>
+        <div class="equipamiento nosotros-part">
+            <div class="left-part">
+                <img src="./assets/banners/foto2.png" alt="">
+            </div>
+            <div class="right-part">
+                <h5>EQUIPO Y MÉDICOS</h5>
+                <h6>Todo el equipamiento es especial y los médicos están my cualificados.</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veritatis tempore sequi voluptatem
+                    dolore quas, rerum vel nulla ipsum sapiente dicta nemo excepturi maiores harum, aut illo earum ab
+                    corporis.</p>
+            </div>
+        </div>
+    </div>
+    <div id="ubicacion">
+        <div class="title-services-area">
+            <h2>NUESTRA</h2>
+            <h3>Ubicación</h3>
+        </div>
+        <div class="back-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.0850356005026!2d-99.18942408582558!3d20.255307786422385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d17df9613a669b%3A0xcb9c2c87d6326b1d!2sREPUBLICA%20DENTAL!5e0!3m2!1ses!2smx!4v1615761644556!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="front-map">
+
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="top-footer">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="info-footer">
+                <h2>Clínica Dental</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque officiis molestiae harum
+                    voluptates, corporis laudantium nesciunt nostrum totam, distinctio labore optio id! Quos suscipit
+                    voluptate expedita laborum odio hic?</p>
+            </div>
+            <div class="contacto">
+                <h3>Contacto</h3>
+                <p>No dude en contactarnos</p>
+                <div class="redes">
+                    <a class="facebook-footer"
+                        href="https://www.facebook.com/pages/category/Cosmetic-Dentist/Republica-Dental-354284801996896/">
+                        <img src="./assets/icons/icons8-facebook-50.png" alt="">
+                        <span>Clínica Dental</span>
+                    </a>
+                    <a class="whatsapp-footer" onclick="giveNumber()">
+                        <img src="./assets/icons/icons8-whatsapp-100.png" alt="">
+                        <span>772 12 39 292</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+         <!--   <span>Made by <a href="https://www.linkedin.com/in/adan-mota-cruz-b83b10185/" target="_blank">Adan Mota
+                    Cruz</a></span>
+            <span>Designed by <a href="" target="_blank">Carlos Alberto Barrera Lugo</a></span>
+        -->
+        </div>
+        <!--
+        <a target="_blank" href="https://icons8.com/icons/set/place-marker--v1">Place Marker icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    -->
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
